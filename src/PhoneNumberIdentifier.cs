@@ -3,7 +3,7 @@
 
 namespace JasonShave.CallAutomation.Contracts;
 
-public class PhoneNumberIdentifier
+public sealed class PhoneNumberIdentifier
 {
     public string Value { get; set; } = string.Empty;
 }

@@ -6,7 +6,7 @@ using System.Text.Json.Serialization;
 namespace JasonShave.CallAutomation.Contracts;
 
 [Serializable]
-public class CommunicationIdentifier
+public sealed class CommunicationIdentifier
 {
     [JsonConverter(typeof(JsonStringEnumConverter))]
     public CommunicationIdentifierKind Kind { get; set; }

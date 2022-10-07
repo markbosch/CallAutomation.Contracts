@@ -3,7 +3,7 @@
 
 namespace JasonShave.CallAutomation.Contracts;
 
-public class MicrosoftTeamsUserIdentifier
+public sealed class MicrosoftTeamsUserIdentifier
 {
     public string? UserId { get; set; }
 

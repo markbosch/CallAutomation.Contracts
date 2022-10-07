@@ -3,7 +3,7 @@
 
 namespace JasonShave.CallAutomation.Contracts;
 
-public class CommunicationUserIdentifier
+public sealed class CommunicationUserIdentifier
 {
     public string? Id { get; set; }
 }
