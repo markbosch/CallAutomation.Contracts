@@ -3,7 +3,7 @@
 
 using System.Text.Json.Serialization;
 
-namespace JasonShave.CallAutomation.Contracts;
+namespace CallAutomation.Contracts;
 
 [Serializable]
 public sealed class CommunicationIdentifier

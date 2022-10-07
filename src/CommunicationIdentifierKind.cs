@@ -3,7 +3,7 @@
 
 using System.Runtime.Serialization;
 
-namespace JasonShave.CallAutomation.Contracts;
+namespace CallAutomation.Contracts;
 
 public enum CommunicationIdentifierKind
 {
