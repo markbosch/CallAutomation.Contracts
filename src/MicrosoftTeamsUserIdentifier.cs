@@ -5,9 +5,9 @@ namespace JasonShave.CallAutomation.Contracts;
 
 public class MicrosoftTeamsUserIdentifier
 {
-    public string UserId { get; set; }
+    public string? UserId { get; set; }
 
-    public bool IsAnonymous { get; set; }
+    public bool IsAnonymous { get; set; } = default;
 
-    public string Cloud { get; set; }
+    public string? Cloud { get; set; }
 }

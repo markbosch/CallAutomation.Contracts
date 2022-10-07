@@ -5,5 +5,5 @@ namespace JasonShave.CallAutomation.Contracts;
 
 public class CommunicationUserIdentifier
 {
-    public string Id { get; set; }
+    public string? Id { get; set; }
 }

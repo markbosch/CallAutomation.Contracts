@@ -11,11 +11,11 @@ public class CommunicationIdentifier
     [JsonConverter(typeof(JsonStringEnumConverter))]
     public CommunicationIdentifierKind Kind { get; set; }
 
-    public string RawId { get; set; }
+    public string? RawId { get; set; } = string.Empty;
 
-    public CommunicationUserIdentifier CommunicationUser { get; set; }
+    public CommunicationUserIdentifier? CommunicationUser { get; set; }
 
-    public PhoneNumberIdentifier PhoneNumber { get; set; }
+    public PhoneNumberIdentifier? PhoneNumber { get; set; }
 
-    public MicrosoftTeamsUserIdentifier MicrosoftTeamsUser { get; set; }
+    public MicrosoftTeamsUserIdentifier? MicrosoftTeamsUser { get; set; }
 }
