@@ -1,5 +1,7 @@
 # CallAutomation.Contracts
 
+[![.NET](https://github.com/jasonshave/CallAutomation.Contracts/actions/workflows/dotnet.yml/badge.svg)](https://github.com/jasonshave/CallAutomation.Contracts/actions/workflows/dotnet.yml)
+
 This repository contains key models used to help developers serialize and deserialize contracts for the Call Automation platform in Azure Communication Services.
 
 ## IncomingCall event payload
