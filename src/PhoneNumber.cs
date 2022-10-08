@@ -3,7 +3,7 @@
 
 namespace CallAutomation.Contracts;
 
-public sealed class PhoneNumberIdentifier
+public sealed class PhoneNumber : CommunicationId
 {
     public string Value { get; set; } = string.Empty;
 }

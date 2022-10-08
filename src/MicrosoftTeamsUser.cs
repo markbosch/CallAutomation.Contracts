@@ -3,7 +3,7 @@
 
 namespace CallAutomation.Contracts;
 
-public sealed class MicrosoftTeamsUserIdentifier
+public sealed class MicrosoftTeamsUser : CommunicationId
 {
     public string? UserId { get; set; }
 

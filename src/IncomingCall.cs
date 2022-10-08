@@ -3,12 +3,11 @@
 
 namespace CallAutomation.Contracts;
 
-[Serializable]
 public sealed class IncomingCall
 {
-    public CommunicationIdentifier To { get; set; } = default!;
+    public CommunicationId To { get; set; } = default!;
 
-    public CommunicationIdentifier From { get; set; } = default!;
+    public CommunicationId From { get; set; } = default!;
 
     public string CallerDisplayName { get; set; } = default!;
 

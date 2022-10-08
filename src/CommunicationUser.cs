@@ -3,7 +3,7 @@
 
 namespace CallAutomation.Contracts;
 
-public sealed class CommunicationUserIdentifier
+public sealed class CommunicationUser : CommunicationId
 {
     public string? Id { get; set; }
 }
