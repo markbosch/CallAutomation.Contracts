@@ -1,17 +1,27 @@
 ﻿// Copyright (c) 2022 Jason Shave. All rights reserved.
 // Licensed under the MIT License.
 
+using System.Text.Json.Serialization;
+
 namespace CallAutomation.Contracts;
 
 public sealed class IncomingCall
 {
-    public CommunicationId To { get; set; } = default!;
+    [JsonPropertyName("to")]
+    public CommunicationId To { get; set; } = null!;
 
-    public CommunicationId From { get; set; } = default!;
+    [JsonPropertyName("from")]
+    public CommunicationId From { get; set; } = null!;
 
-    public string CallerDisplayName { get; set; } = default!;
+    [JsonPropertyName("callerDisplayName")]
+    public string CallerDisplayName { get; set; } = string.Empty;
 
-    public string IncomingCallContext { get; set; } = default!;
+    [JsonPropertyName("incomingCallContext")]
+    public string IncomingCallContext { get; set; } = string.Empty;
 
-    public string CorrelationId { get; set; } = default!;
+    [JsonPropertyName("correlationId")]
+    public string CorrelationId { get; set; } = string.Empty;
+
+    [JsonPropertyName("serverCallId")]
+    public string? ServerCallId { get; set; }
 }

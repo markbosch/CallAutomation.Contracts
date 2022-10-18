@@ -1,6 +1,6 @@
 # CallAutomation.Contracts
 
-[![.NET](https://github.com/jasonshave/CallAutomation.Contracts/actions/workflows/dotnet.yml/badge.svg)](https://github.com/jasonshave/CallAutomation.Contracts/actions/workflows/dotnet.yml)
+[![.NET](https://github.com/jasonshave/CallAutomation.Contracts/actions/workflows/dotnet.yml/badge.svg)](https://github.com/jasonshave/CallAutomation.Contracts/actions/workflows/dotnet.yml) [![Nuget](https://img.shields.io/nuget/v/CallAutomation.Contracts.svg?style=flat)](https://www.nuget.org/packages/CallAutomation.Contracts/)
 
 This repository contains key models used to help developers serialize and deserialize contracts for the Call Automation platform in Azure Communication Services.
 
