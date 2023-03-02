@@ -1,4 +1,4 @@
-﻿// Copyright (c) 2022 Jason Shave. All rights reserved.
+﻿// Copyright (c) 2023 Jason Shave. All rights reserved.
 // Licensed under the MIT License.
 
 using System.Runtime.Serialization;
@@ -7,9 +7,9 @@ namespace CallAutomation.Contracts;
 
 public enum CommunicationIdentifierKind
 {
-    [EnumMember(Value= "unknown")]
+    [EnumMember(Value = "unknown")]
     Unknown,
-    [EnumMember(Value= "communicationUser")]
+    [EnumMember(Value = "communicationUser")]
     CommunicationUser,
     [EnumMember(Value = "phoneNumber")]
     PhoneNumber,

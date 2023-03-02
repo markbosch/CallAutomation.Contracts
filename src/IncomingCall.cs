@@ -1,4 +1,4 @@
-﻿// Copyright (c) 2022 Jason Shave. All rights reserved.
+﻿// Copyright (c) 2023 Jason Shave. All rights reserved.
 // Licensed under the MIT License.
 
 using System.Text.Json.Serialization;
@@ -18,6 +18,9 @@ public sealed class IncomingCall
 
     [JsonPropertyName("incomingCallContext")]
     public string IncomingCallContext { get; set; } = string.Empty;
+
+    [JsonPropertyName("customContext")]
+    public CustomContext? CustomContext { get; set; }
 
     [JsonPropertyName("correlationId")]
     public string CorrelationId { get; set; } = string.Empty;

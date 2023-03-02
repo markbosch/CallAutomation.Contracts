@@ -11,7 +11,7 @@
     },
     "documentationRules": {
       "xmlHeader": false,
-      "copyrightText": "© Jason Shave. All rights reserved."
+      "copyrightText": "Copyright (c) 2023 Jason Shave. All rights reserved.\nLicensed under the MIT License."
     },
     "spacingRules": {
     },
