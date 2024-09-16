@@ -15,4 +15,6 @@ public enum CommunicationIdentifierKind
     PhoneNumber,
     [EnumMember(Value = "microsoftTeamsUser")]
     MicrosoftTeamsUser,
+    [EnumMember(Value = "microsoftTeamsApp")]
+    MicrosoftTeamsApp,
 }

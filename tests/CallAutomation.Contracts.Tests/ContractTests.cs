@@ -48,5 +48,20 @@ namespace CallAutomation.Contracts.Tests
             result.CustomContext.VoIpHeaders.ContainsKey("customHeader");
             result.CustomContext.VoIpHeaders["customHeader"].Should().Be("123");
         }
+
+        [Fact]
+        public void IncomingCall_MicrosoftTeamsApp_Deserialize()
+        {
+            // arrange
+            var incomingCallJson =
+                "{\r\n\t\t\"to\": {\r\n\t\t\t\"rawId\": \"8:acs:fake_fake\",\r\n\t\t\t\"kind\": \"microsoftTeamsApp\",\r\n\t\t\t\"id\": \"8:acs:fake_fake\"\r\n\t\t},\r\n\t\t\"from\": {\r\n\t\t\t\"rawId\": \"4:+14255551212\",\r\n\t\t\t\"kind\": \"phoneNumber\",\r\n\t\t\t\"value\": \"+14255551212\"\r\n\t\t},\r\n\t\t\"callerDisplayName\": \"\",\r\n\t\t\"incomingCallContext\": \"\",\r\n\t\t\"correlationId\": \"f1e2d730-2ed4-4b6f-bf7f-1a8714155e8e\"\r\n\t}";
+
+            // act
+            var result = JsonSerializer.Deserialize<IncomingCall>(incomingCallJson);
+
+            // assert
+            result.To.Kind.Should().Be(CommunicationIdentifierKind.MicrosoftTeamsApp);
+            result.From.Kind.Should().Be(CommunicationIdentifierKind.PhoneNumber);
+        }
     }
 }
